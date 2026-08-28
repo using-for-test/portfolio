@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Al Mikat — CSE Student &amp; Developer Portfolio</title>
+  <meta name="description" content="Personal portfolio of Al Mikat, CSE Student at PSTU, Competitive Programmer, and Aspiring Software Developer.">
+  <meta name="keywords" content="Al Mikat, Khondoker Almikat, CSE Student, PSTU, Competitive Programmer, Software Developer, Java, C++, Web Developer, Bangladesh">
+  <meta name="author" content="Al Mikat">
+  <meta name="theme-color" content="#0d0d12" id="metaThemeColor">
+
+  <!-- OpenGraph / Social Metadata -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Al Mikat Portfolio">
+  <meta property="og:title" content="Al-Mikat — CSE Student &amp; Developer Portfolio">
+  <meta property="og:description" content="CSE Student at PSTU | Competitive Programmer | Aspiring Software Developer.">
+  <meta property="og:image" content="assets/brand-logo.png">
+  <meta property="og:image:alt" content="Al Mikat Brand Logo">
+
+  <!-- Twitter / X Card Metadata -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Al-Mikat — CSE Student &amp; Developer Portfolio">
+  <meta name="twitter:description" content="CSE Student at PSTU | Competitive Programmer | Aspiring Software Developer.">
+  <meta name="twitter:image" content="assets/brand-logo.png">
+
+  <!-- Favicon & Touch Icons -->
+  <link rel="icon" type="image/png" href="assets/brand-logo.png">
+  <link rel="apple-touch-icon" href="assets/brand-logo.png">
+
+  <!-- Google Fonts: Plus Jakarta Sans, Inter, JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- =========================================================================
+       Navigation Header (Sticky & Glassmorphism)
+       ========================================================================= -->
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-container">
+      <a href="#home" class="brand-logo" id="brandLogo" aria-label="Al Mikat Home">
+        Khondoker.<span class="accent-dot">Almikat</span>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home" class="nav-link active" id="navLinkHome">Home</a></li>
+          <li><a href="#about" class="nav-link" id="navLinkAbout">About</a></li>
+          <li><a href="#skills" class="nav-link" id="navLinkSkills">Skills</a></li>
+          <li><a href="#projects" class="nav-link" id="navLinkProjects">Projects</a></li>
+          <li><a href="#education" class="nav-link" id="navLinkEducation">Education</a></li>
+          <li><a href="#contact" class="nav-link" id="navLinkContact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Theme Toggle Switcher (Dark / Light) -->
+        <button class="theme-toggle-btn" id="themeToggleBtn" aria-label="Toggle light and dark theme" title="Toggle Theme">
+          <svg class="theme-icon theme-icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="theme-icon theme-icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <!-- Quick Contact CTA -->
+        <a href="#contact" class="btn btn-nav-cta d-none-mobile">Let's Talk</a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- =======================================================================
+         1. Home Section (#home) - Modern Visual Hero with Portrait
+         ======================================================================= -->
+    <section class="section hero-section" id="home">
+      <div class="hero-ambient-glow"></div>
+      <div class="container hero-container">
+        <div class="hero-grid">
+          <!-- Left Column: Bio & Calls to Action -->
+          <div class="hero-content">
+            <div class="status-pill">
+              <span class="pulse-dot"></span>
+              <span>Available for Opportunities</span>
+            </div>
+
+            <h2 class="hero-greeting">Hi, I'm</h2>
+            <h1 class="hero-name-big"><span class="accent-text">Khondoker Almikat</span></h1>
+
+            <p class="hero-subtitle">
+              CSE Student <span class="divider">|</span> Competitive Programmer <span class="divider">|</span> Aspiring Software Developer
+            </p>
+
+            <p class="hero-desc">
+              Passionate undergraduate at Patuakhali Science and Technology University (PSTU). Dedicated to algorithmic problem-solving, software engineering, and building high-impact digital solutions.
+            </p>
+
+            <div class="hero-actions">
+              <a href="#projects" class="btn btn-primary" id="heroBtnProjects">
+                <span>View Projects</span>
+                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+              <a href="https://github.com/kh-almikat" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" id="heroBtnGithub">
+                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                </svg>
+                <span>Visit Github</span>
+              </a>
+            </div>
+
+            <div class="hero-quick-tags">
+              <span class="quick-tag">
+                <span class="quick-tag-dot"></span>
+                <span>C++ &amp; Problem Solving</span>
+              </span>
+              <span class="quick-tag">
+                <span class="quick-tag-dot"></span>
+                <span>DSA</span>
+              </span>
+              <span class="quick-tag">
+                <span class="quick-tag-dot"></span>
+                <span>Software Developer</span>
+              </span>
+            </div>
+          </div>
+
+          <!-- Right Column: Visual Portrait Card -->
+          <div class="hero-visual">
+            <div class="hero-image-frame-wrap">
+              <div class="hero-image-backdrop-glow"></div>
+              <div class="hero-image-frame">
+                <img src="assets/hero-portrait.png" alt="Khondoker Almikat" class="hero-portrait-img" width="500" height="600" loading="eager">
+              </div>
+
+              <!-- Floating Badges -->
+              <div class="hero-float-badge badge-top-right">
+                <div class="float-badge-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="16 18 22 12 16 6"></polyline>
+                    <polyline points="8 6 2 12 8 18"></polyline>
+                  </svg>
+                </div>
+                <div class="float-badge-text">
+                  <span class="float-badge-title">Aspiring Software</span>
+                  <span class="float-badge-sub">Developer</span>
+                </div>
+              </div>
+
+              <div class="hero-float-badge badge-bottom-left">
+                <div class="float-badge-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                    <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                  </svg>
+                </div>
+                <div class="float-badge-text">
+                  <span class="float-badge-title">B.Sc. in CSE</span>
+                  <span class="float-badge-sub">PSTU</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         2. About Section (#about) - Modern Bento Architecture (Concise)
+         ======================================================================= -->
+    <section class="section about-section" id="about">
+      <div class="container about-container">
+        <div class="section-header">
+          <span class="section-tag">About Me</span>
+          <div class="section-underline"></div>
+        </div>
+
+        <div class="about-modern-grid">
+          <!-- Main Story Card -->
+          <div class="about-card about-story-card">
+            <div class="about-card-badge">
+              <span class="badge-dot"></span>
+              <span>Overview</span>
+            </div>
+            
+            <h3 class="about-story-title">
+              Hello! I'm <span class="accent-text">Khondoker Almikat</span>
+            </h3>
+            
+            <p class="about-lead-para">
+              Undergraduate <strong>CSE student at Patuakhali Science and Technology University (PSTU)</strong> with a passion for problem-solving and software engineering.
+            </p>
+
+            <p>
+              I actively practice <strong>Data Structures &amp; Algorithms</strong> in <strong>C++</strong>, and build robust backend &amp; web solutions with <strong>Python</strong>, <strong>FastAPI</strong>, and <strong>MySQL</strong>.
+            </p>
+
+            <div class="about-chips-list">
+              <span class="about-chip">#Python</span>
+              <span class="about-chip">#FastAPI</span>
+              <span class="about-chip">#DSA</span>
+              <span class="about-chip">#C++</span>
+              <span class="about-chip">#ProblemSolving</span>
+              <span class="about-chip">#Backend</span>
+            </div>
+          </div>
+
+          <!-- 4 Highlight Bento Cards -->
+          <div class="about-bento-grid">
+            <!-- Bento 1: Education -->
+            <div class="about-card bento-card">
+              <div class="bento-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                  <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                </svg>
+              </div>
+              <div class="bento-content">
+                <h4 class="bento-title">Academic Foundation</h4>
+                <p class="bento-text">B.Sc. in CSE @ PSTU covering Algorithms, DBMS, and Systems.</p>
+              </div>
+            </div>
+
+            <!-- Bento 2: Problem Solving -->
+            <div class="about-card bento-card">
+              <div class="bento-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                </svg>
+              </div>
+              <div class="bento-content">
+                <h4 class="bento-title">Problem Solving</h4>
+                <p class="bento-text">Sharpening logic, speed, and algorithmic thinking in C++.</p>
+              </div>
+            </div>
+
+            <!-- Bento 3: Software Craft -->
+            <div class="about-card bento-card">
+              <div class="bento-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+              <div class="bento-content">
+                <h4 class="bento-title">Software Development</h4>
+                <p class="bento-text">Building high-performance backend and APIs with Python, FastAPI, and MySQL.</p>
+              </div>
+            </div>
+
+            <!-- Bento 4: Mindset -->
+            <div class="about-card bento-card">
+              <div class="bento-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon>
+                </svg>
+              </div>
+              <div class="bento-content">
+                <h4 class="bento-title">Engineering Mindset</h4>
+                <p class="bento-text">Dedicated to clean code, continuous learning, and impact.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         3. Skills Section (#skills)
+         ======================================================================= -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Technical Skills</span>
+          <h2 class="section-title">My Tech Stack &amp; Toolkit</h2>
+          <div class="section-underline"></div>
+          <p class="section-subtitle">
+            Languages, frameworks, and developer tools I actively use across competitive programming and project development.
+          </p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Category 1: Languages -->
+          <div class="skill-category-card">
+            <div class="skill-category-header">
+              <div class="skill-cat-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+              <div>
+                <h3 class="skill-cat-title">Languages</h3>
+                <span class="skill-cat-sub">Core Programming</span>
+              </div>
+            </div>
+            <div class="skill-chips-wrap">
+              <div class="skill-chip">
+                <span class="skill-dot"></span>
+                <span class="skill-name">C</span>
+              </div>
+              <div class="skill-chip">
+                <span class="skill-dot"></span>
+                <span class="skill-name">C++</span>
+              </div>
+              <div class="skill-chip">
+                <span class="skill-dot"></span>
+                <span class="skill-name">Java</span>
+              </div>
+              <div class="skill-chip">
+                <span class="skill-dot"></span>
+                <span class="skill-name">Python</span>
+              </div>
+              <div class="skill-chip">
+                <span class="skill-dot"></span>
+                <span class="skill-name">JavaScript</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 2: Web Development -->
+          <div class="skill-category-card">
+            <div class="skill-category-header">
+              <div class="skill-cat-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                  <line x1="8" y1="21" x2="16" y2="21"></line>
+                  <line x1="12" y1="17" x2="12" y2="21"></line>
+                </svg>
+              </div>
+              <div>
+                <h3 class="skill-cat-title">Web &amp; Backend</h3>
+                <span class="skill-cat-sub">Frameworks &amp; APIs</span>
+              </div>
+            </div>
+            <div class="skill-chips-wrap">
+              <div class="skill-chip">
+                <span class="skill-dot"></span>
+                <span class="skill-name">FastAPI</span>
+              </div>
+              <div class="skill-chip">
+                <span class="skill-dot"></span>
+                <span class="skill-name">HTML5</span>
+              </div>
+              <div class="skill-chip">
+                <span class="skill-dot"></span>
+                <span class="skill-name">CSS3</span>
+              </div>
+              <div class="skill-chip">
+                <span class="skill-dot"></span>
+                <span class="skill-name">Tailwind CSS</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 3: Tools -->
+          <div class="skill-category-card">
+            <div class="skill-category-header">
+              <div class="skill-cat-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="skill-cat-title">Tools &amp; Workflow</h3>
+                <span class="skill-cat-sub">Version Control &amp; IDEs</span>
+              </div>
+            </div>
+            <div class="skill-chips-wrap">
+              <div class="skill-chip">
+                <span class="skill-dot"></span>
+                <span class="skill-name">Git</span>
+              </div>
+              <div class="skill-chip">
+                <span class="skill-dot"></span>
+                <span class="skill-name">GitHub</span>
+              </div>
+              <div class="skill-chip">
+                <span class="skill-dot"></span>
+                <span class="skill-name">VS Code</span>
+              </div>
+              <div class="skill-chip">
+                <span class="skill-dot"></span>
+                <span class="skill-name">AntiGravity</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         4. Projects Section (#projects) - High Priority Showcase
+         ======================================================================= -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Featured Work</span>
+          <h2 class="section-title">Highlighted Project</h2>
+          <div class="section-underline"></div>
+          <p class="section-subtitle">
+            A featured software application demonstrating object-oriented programming, database connectivity, and clean user interface design.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project: UniPay (Flagship Highlight) -->
+          <article class="project-card featured-project">
+            <div class="project-preview-wrap">
+              <img 
+                src="assets/project-unipay.png" 
+                alt="UniPay — University Online Payment &amp; Fee Management System"
+                class="project-img"
+                loading="lazy"
+              >
+              <div class="project-badge-pill">Featured Project</div>
+            </div>
+
+            <div class="project-content">
+              <div class="project-meta-top">
+                <span class="project-category">Desktop Application / Enterprise System</span>
+              </div>
+
+              <h3 class="project-title">UniPay — University Online Payment &amp; Fee Management System</h3>
+
+              <p class="project-desc">
+                A full-featured desktop transaction and fee management system designed for university administration and students. Implements secure role-based authentication, automated semester fee calculation, receipt generation, and real-time MySQL database synchronisation through JDBC.
+              </p>
+
+              <div class="project-tech-tags">
+                <span class="tech-tag">Java</span>
+                <span class="tech-tag">Swing</span>
+                <span class="tech-tag">OOP</span>
+                <span class="tech-tag">MySQL</span>
+                <span class="tech-tag">JDBC</span>
+              </div>
+
+              <div class="project-actions">
+                <a href="https://github.com/kh-almikat/UniPay" target="_blank" rel="noopener noreferrer" class="btn btn-project-primary" aria-label="View UniPay Source Code on GitHub">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                  </svg>
+                  <span>Source Code</span>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         5. Education Section (#education) - Vertical Alternating Timeline
+         ======================================================================= -->
+    <section class="section education-section" id="education">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Education</h2>
+          <div class="section-underline"></div>
+        </div>
+
+        <div class="timeline-container">
+          <div class="timeline-line"></div>
+
+          <!-- Item 1 (Left) - University -->
+          <div class="timeline-item timeline-left">
+            <div class="timeline-dot">
+              <span class="timeline-dot-inner"></span>
+            </div>
+            <div class="timeline-card">
+              <h3 class="timeline-title">Patuakhali Science &amp; Technology University</h3>
+              <p class="timeline-degree">Bachelor of Science in Computer Science &amp; Engineering</p>
+              <div class="timeline-date">2024 – Present </div>
+            </div>
+          </div>
+
+          <!-- Item 2 (Right) - HSC -->
+          <div class="timeline-item timeline-right">
+            <div class="timeline-dot">
+              <span class="timeline-dot-inner"></span>
+            </div>
+            <div class="timeline-card">
+              <h3 class="timeline-title">Higher Secondary Certificate (HSC)</h3>
+              <p class="timeline-degree">Government Brojomohun College, Barishal</p>
+              <div class="timeline-date">2022 – 2024</div>
+            </div>
+          </div>
+
+          <!-- Item 3 (Left) - SSC -->
+          <div class="timeline-item timeline-left">
+            <div class="timeline-dot">
+              <span class="timeline-dot-inner"></span>
+            </div>
+            <div class="timeline-card">
+              <h3 class="timeline-title">Secondary School Certificate (SSC)</h3>
+              <p class="timeline-degree">Barishal Govt. Model School & College</p>
+              <div class="timeline-date">2017 – 2022</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         6. Contact Section (#contact)
+         ======================================================================= -->
+    <section class="section contact-section" id="contact">
+      <div class="container contact-container">
+        <div class="contact-card">
+          <div class="contact-tag">Get in Touch</div>
+          
+          <h2 class="contact-heading">
+            Let's Build Something Together 👋
+          </h2>
+
+          <p class="contact-message">
+            I'm always excited to discuss new opportunities, software projects, competitive programming challenges, or open-source collaborations. Feel free to reach out anytime!
+          </p>
+
+          <!-- Direct Email Link -->
+          <div class="contact-email-wrap">
+            <a href="mailto:khondoker.almikat@gmail.com" class="contact-email-btn" id="contactEmailBtn">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              <span>khondoker.almikat@gmail.com</span>
+            </a>
+          </div>
+
+          <!-- Social Links Row -->
+          <div class="social-links-grid">
+            <!-- LinkedIn -->
+            <a href="https://www.linkedin.com/in/khondoker-almikat/" target="_blank" rel="noopener noreferrer" class="social-link-item" aria-label="LinkedIn Profile">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+              <span>LinkedIn</span>
+            </a>
+
+            <!-- LeetCode -->
+            <a href="https://leetcode.com/u/kh_almikat/" target="_blank" rel="noopener noreferrer" class="social-link-item" aria-label="LeetCode Profile">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .666-1.607 2.6 2.6 0 0 1 .688-.534L11.55 6.44l4.032-4.045c.54-.54.54-1.414.003-1.955A1.37 1.37 0 0 0 13.483 0zm-2.866 12.815a1.38 1.38 0 0 0-1.38 1.382 1.38 1.38 0 0 0 1.38 1.382H20.79a1.38 1.38 0 0 0 1.38-1.382 1.38 1.38 0 0 0-1.38-1.382z"/>
+              </svg>
+              <span>LeetCode</span>
+            </a>
+
+            <!-- Codeforces -->
+            <a href="https://codeforces.com/profile/almikat_ahmed" target="_blank" rel="noopener noreferrer" class="social-link-item" aria-label="Codeforces Profile">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="10" width="4" height="11" rx="1"></rect>
+                <rect x="10" y="4" width="4" height="17" rx="1"></rect>
+                <rect x="17" y="13" width="4" height="8" rx="1"></rect>
+              </svg>
+              <span>Codeforces</span>
+            </a>
+
+            <!-- Facebook -->
+            <a href="https://www.facebook.com/almikat.ahmed" target="_blank" rel="noopener noreferrer" class="social-link-item" aria-label="Facebook Profile">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+              </svg>
+              <span>Facebook</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================================================================
+       Site Footer
+       ========================================================================= -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <p class="footer-copy">
+        &copy; 2026 <span class="white-text">Al Mikat</span>. Built with clean code &amp; precision.
+      </p>
+
+      <a href="#home" class="back-to-top-btn" id="backToTopBtn" aria-label="Scroll back to top">
+        <span>Back to Top</span>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+      </a>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript File -->
+  <script src="js/main.js"></script>
+</body>
+</html>
